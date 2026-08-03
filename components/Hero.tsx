@@ -47,7 +47,7 @@ export default function Hero({ onContactClick }: HeroProps) {
           </a>
         </div>
 
-        {/* Decorative Grid Background */}
+        {/* Decorative Grid Background with Products */}
         <div className="relative mt-12 mb-0 h-96 md:h-96 rounded-lg overflow-hidden border border-border/30 bg-gradient-to-br from-card to-background/50 flex items-center justify-center">
           <div className="absolute inset-0 opacity-5">
             <svg className="w-full h-full" xmlns="http://www.w3.org/2000/svg">
@@ -60,8 +60,36 @@ export default function Hero({ onContactClick }: HeroProps) {
             </svg>
           </div>
 
+          {/* Product Panels Background */}
+          <div className="absolute inset-0 flex items-center justify-center gap-3 px-4 opacity-40">
+            {/* Left Product Panel */}
+            <div className="w-20 h-32 rounded-lg bg-gradient-to-b from-yellow-400 via-orange-400 to-red-500 border-2 border-primary shadow-lg transform -rotate-12 hover:rotate-0 transition-transform flex items-end justify-center pb-2">
+              <span className="text-2xl">🎬</span>
+            </div>
+            
+            {/* Center Product Panel */}
+            <div className="w-24 h-40 rounded-lg bg-gradient-to-b from-green-400 via-cyan-400 to-blue-600 border-2 border-primary shadow-xl transform rotate-0 scale-110 flex items-end justify-center pb-3">
+              <span className="text-3xl">⚡</span>
+            </div>
+            
+            {/* Right Product Panel */}
+            <div className="w-20 h-32 rounded-lg bg-gradient-to-b from-purple-400 via-pink-400 to-red-500 border-2 border-primary shadow-lg transform rotate-12 hover:rotate-0 transition-transform flex items-end justify-center pb-2">
+              <span className="text-2xl">✨</span>
+            </div>
+
+            {/* Far Left Product Panel */}
+            <div className="hidden md:flex w-16 h-28 rounded-lg bg-gradient-to-b from-indigo-400 to-purple-600 border-2 border-primary/70 shadow-md transform -rotate-6 flex items-end justify-center pb-1">
+              <span className="text-xl">🎨</span>
+            </div>
+
+            {/* Far Right Product Panel */}
+            <div className="hidden md:flex w-16 h-28 rounded-lg bg-gradient-to-b from-cyan-300 to-blue-500 border-2 border-primary/70 shadow-md transform rotate-6 flex items-end justify-center pb-1">
+              <span className="text-xl">🎭</span>
+            </div>
+          </div>
+
           {/* Center Content */}
-          <div className="relative z-10 text-center">
+          <div className="relative z-10 text-center pointer-events-none">
             <div className="mb-4 text-6xl">🎨</div>
             <p className="text-muted-foreground font-medium">
               Explore Our Collection
