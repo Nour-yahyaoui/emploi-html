@@ -47,30 +47,7 @@ export default function Hero({ onContactClick }: HeroProps) {
           </a>
         </div>
 
-        {/* Decorative Grid Background */}
-        <div className="relative mt-12 mb-0 h-96 md:h-96 rounded-lg overflow-hidden border border-border/30 bg-gradient-to-br from-card to-background/50 flex items-center justify-center">
-          <div className="absolute inset-0 opacity-5">
-            <svg className="w-full h-full" xmlns="http://www.w3.org/2000/svg">
-              <defs>
-                <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-                  <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#ff0000" strokeWidth="0.5" />
-                </pattern>
-              </defs>
-              <rect width="100%" height="100%" fill="url(#grid)" />
-            </svg>
-          </div>
 
-          {/* Center Content */}
-          <div className="relative z-10 text-center">
-            <div className="mb-4 text-6xl">🎨</div>
-            <p className="text-muted-foreground font-medium">
-              Explore Our Collection
-            </p>
-            <p className="text-sm text-muted-foreground mt-2">
-              Featuring anime, Disney, cartoons, and more
-            </p>
-          </div>
-        </div>
 
         {/* Stats */}
         <div className="grid grid-cols-3 gap-4 mt-12 md:mt-16 max-w-2xl mx-auto">
