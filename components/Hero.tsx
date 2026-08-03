@@ -78,12 +78,12 @@ export default function Hero({ onContactClick }: HeroProps) {
             </div>
 
             {/* Far Left Product Panel */}
-            <div className="hidden md:flex w-16 h-28 rounded-lg bg-gradient-to-b from-indigo-400 to-purple-600 border-2 border-primary/70 shadow-md transform -rotate-6 flex items-end justify-center pb-1">
+            <div className="hidden md:flex w-16 h-28 rounded-lg bg-gradient-to-b from-indigo-400 to-purple-600 border-2 border-primary/70 shadow-md transform -rotate-6 items-end justify-center pb-1">
               <span className="text-xl">🎨</span>
             </div>
 
             {/* Far Right Product Panel */}
-            <div className="hidden md:flex w-16 h-28 rounded-lg bg-gradient-to-b from-cyan-300 to-blue-500 border-2 border-primary/70 shadow-md transform rotate-6 flex items-end justify-center pb-1">
+            <div className="hidden md:flex w-16 h-28 rounded-lg bg-gradient-to-b from-cyan-300 to-blue-500 border-2 border-primary/70 shadow-md transform rotate-6 items-end justify-center pb-1">
               <span className="text-xl">🎭</span>
             </div>
           </div>
